@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"></head>
 <style>
 .logo-src {width:97px;background:url(https://dasgroupco.com/wp-content/uploads/2024/09/das-logo-3.png)!important}
@@ -47,8 +48,7 @@
             </div>
         </div>
         <div class="app-header__menu">
-            <span>
-                <button type="button"
+             <button type="button"
                     class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
                     <span class="btn-icon-wrapper">
                         <i class="fa fa-ellipsis-v fa-w-6"></i>
@@ -59,11 +59,11 @@
         <div class="app-header__content">
             <div class="app-header-left">
                 <div class="search-wrapper">
-                    <div class="input-holder">
-                        <input type="text" class="search-input" placeholder="Type to search">
-                        <button class="search-icon"><span></span></button>
-                    </div>
-                    <button class="close"></button>
+                   
+                                    <div >
+                                        <img src="https://dasgroupco.com/wp-content/uploads/2024/09/das-logo-3.png" width="130px">
+                                    </div>
+                                
                 </div>
             </div>
             <div class="app-header-right">
@@ -76,7 +76,7 @@
                                     {{ Auth::user()->name }}
                                 </div>
                                 <div class="widget-subheading">
-                                    VP People Manager
+                                    People Manager
                                 </div>
                             </div>
                             <div class="widget-content-left">
@@ -151,7 +151,7 @@
 
                     <li class="app-sidebar__heading">Stock Management</li>
                     <li>
-                        <a href="#">
+                        <a href="/stock">
                             <i class="metismenu-icon"></i>
                             Stock Levels
                         </a>

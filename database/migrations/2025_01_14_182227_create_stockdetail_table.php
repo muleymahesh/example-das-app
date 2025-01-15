@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('stockRequestMaster', function (Blueprint $table) {
+        Schema::create('stockDetails', function (Blueprint $table) {
             $table->id();
-            $table->string('raisedBy');
-            $table->string('assignedTo');
-            $table->string('status');
-            $table->timestamps();
+            $table->unsignedBigInteger('stockId');
+            $table->unsignedBigInteger('productId');
+            $table->integer('quantity');
+
+            $table->foreign('stockId')->references('id')->on('stockRequestMaster')->onDelete('cascade');
+
         });
-       
     }
 
     /**
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('stocks');
+        Schema::dropIfExists('stockdetail');
     }
 };

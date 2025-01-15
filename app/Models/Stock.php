@@ -10,7 +10,7 @@ class Stock extends Model
 
     protected $fillable = [
 
-        'name', 'SKU', 'Price', 'Description'
+         'raisedBy', 'assignedTo', 'status'
 
     ];
 }

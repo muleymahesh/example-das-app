@@ -6,7 +6,7 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ProductController;
 
 
-Route::get('/products', [ProductController::class, 'products']);
+Route::get('/ products', [ProductController::class, 'products']);
 Route::middleware('auth:api')->group(function () {
     Route::get('/products1', [ProductController::class, 'products']);
     Route::get('/products/{id}', [ProductController::class, 'show']);

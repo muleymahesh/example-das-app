@@ -75,9 +75,9 @@ class StockController extends Controller
 
     {
 
-        $product = Product::find($id);
+        $product = Stock::find($id);
 
-        return view('stocks.createOrUpdate',compact('stock'));
+        return view('stocks.create',compact('stockS'));
 
     }
 

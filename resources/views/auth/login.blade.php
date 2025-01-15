@@ -1,20 +1,33 @@
-@extends('layout')
+@extends('../layout')
 
   
 
 @section('content')
 
 <main class="login-form">
-
+    <div class="text-center">
+        <div class="page-title-wrapper">
+            <div class="page-title-heading">
+               
+              
+            </div>
+        </div>
+    </div>
   <div class="cotainer">
 
       <div class="row justify-content-center">
 
           <div class="col-md-8">
 
-              <div class="card">
+              <div class="card" style="margin-top: 100px;">
 
-                  <div class="card-header">Login</div>
+                  <div class="card-header">
+                    
+                    <div class="text-center">
+                        <img src="https://dasgroupco.com/wp-content/uploads/2024/09/das-logo-3.png" width="130px">
+                    </div>
+                   
+                </div>
 
                   <div class="card-body">
 
